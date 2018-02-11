@@ -1,4 +1,3 @@
-#!/home/earaiza/bots/bots_project/bin/python2.7
 # coding: utf-8
 import xml.etree.ElementTree as ET
 import time
