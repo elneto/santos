@@ -12,7 +12,7 @@ with open('config.json', 'r') as f:
 
 __author__ = "Ernesto Araiza"
 __copyright__ = "Copyright 2014"
-__version__ = "0.3"
+__version__ = "0.4"
 __email__ = "yo@ernestoaraiza.com"
 __status__ = "Production"
 
