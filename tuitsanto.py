@@ -91,10 +91,10 @@ class Santo:
             lista_tuits = divide_en_tuits(status)
             for tuit in lista_tuits:
                 print tuit 
-                twitter.update_status(status=tuit)
+                self.twitter.update_status(status=tuit)
         else:
             status = self.y_a(status)
             print status 
-            twitter.update_status(status=status)
+            self.twitter.update_status(status=status)
 s = Santo()
 s.tuit()
