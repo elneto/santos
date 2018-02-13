@@ -7,7 +7,8 @@ import os
 import random
 import json
 
-with open('config.json', 'r') as f:
+DIRFILES = os.getcwd()+'/'
+with open(DIRFILES+'config.json', 'r') as f:
     config = json.load(f)
 
 __author__ = "Ernesto Araiza"
@@ -29,9 +30,6 @@ class Santo:
     auth = twitter.get_authentication_tokens()
     twitter = Twython(APP_KEY, APP_SECRET,
                       OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-
-    #this is the current directory (pwd)
-    DIRFILES = config['DEV']['DIRFILES'] #DEV 
 
     FELICIDADES = ['Hoy felicitamos a', 'Hoy es santo de', 'Felicitemos a', 'Felicitaciones para', 'Felicidades', 'Santos de hoy:']
     TAMBIEN = ['También', 'y']
